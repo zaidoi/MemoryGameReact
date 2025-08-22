@@ -18,7 +18,6 @@ function App() {
         );
         const data = await res.json();
         setData(data.data);
-        console.log(data.data);
       } catch (err) {
         console.log(err);
       }
