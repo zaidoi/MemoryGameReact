@@ -60,6 +60,20 @@ function App() {
     return shuffled;
   }
 
+  function shuffleSimple(arr) {
+    let copy = [...arr];        // so we don't modify original
+    let shuffled = [];
+  
+    while (copy.length > 0) {
+      let randIndex = Math.floor(Math.random() * copy.length);
+      shuffled.push(copy[randIndex]);
+      copy.splice(randIndex, 1); // remove used element
+    }
+  
+    return shuffled;
+  }
+
+
   const cardClick = (e) => {
     const title = e.currentTarget.querySelector("h2").innerText;
     loopingArr(title);
@@ -107,3 +121,5 @@ function App() {
 }
 
 export default App;
+
+
