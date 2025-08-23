@@ -12,7 +12,7 @@ function GameOver({ func }) {
                      hover:bg-gray-800 transition"
         onClick={func}
       >
-        Play Again
+        Play Again Loser!!
       </button>
     </div>
   );
